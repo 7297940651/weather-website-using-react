@@ -7,7 +7,7 @@ const Temapp=()=>{
 
     useEffect(()=>{
         const fetchApi=async()=>{
-            const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=be3c5aa2fc91c81d28ba075e5fab24cf`
+            const url=`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=be3c5aa2fc91c81d28ba075e5fab24cf`
             const response= await fetch(url)
             const resJson= await response.json()
 
